@@ -1,0 +1,21 @@
+{
+  "name": "Cro::WebApp::Template::Repository::Build",
+  "description": "Uses Cro templates in a Build context",
+  "version": "v0.0.1",
+  "perl": "6.*",
+  "authors": [
+    "Richard Nabil Hainsworth"
+  ],
+  "auth": "github:finanalyst",
+  "depends": [
+    "Cro::WebApp"
+  ],
+  "build-depends": [],
+  "test-depends": [],
+  "provides": {
+    "Cro::WebApp::Template::Repository::Build": "lib/Cro/WebApp/Template/Repository/Build.rakumod"
+  },
+  "resources": [],
+  "license": "Artistic-2.0",
+  "source-url": "git://github.com/finanalyst/Cro-WebApp-Template-Repository-Build.git"
+}
