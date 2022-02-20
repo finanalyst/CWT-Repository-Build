@@ -1,3 +1,5 @@
+![github-tests-passing-badge](https://github/actions/workflows/test.yaml/badge.svg)
+
 # Cro::WebApp::Template::Repository::Build
 
 ----
@@ -70,4 +72,4 @@ The values in %templates over-ride the value in the repository if it was set by 
 
 
 ----
-Rendered from README at 2022-02-16T17:24:03Z
+Rendered from README at 2022-02-20T14:36:05Z
