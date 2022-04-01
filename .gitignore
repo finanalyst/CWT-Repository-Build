@@ -1,6 +1,8 @@
 /.precomp/
 
-/CWT-Repository-Build.iml
+/CWT-Repository-Hash.iml
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/vcs.xml
+/.idea/csv-plugin.xml
+/.idea/workspace.xml

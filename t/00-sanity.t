@@ -1,4 +1,4 @@
 use v6.d;
 use Test;
-use-ok "Cro::WebApp::Template::Repository::Build";
+use-ok "Cro::WebApp::Template::Repository::Hash";
 done-testing;

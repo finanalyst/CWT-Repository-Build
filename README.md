@@ -1,9 +1,8 @@
-![github-tests-passing-badge](https://github/actions/workflows/test.yaml/badge.svg)
+![github-tests-passing-badge](https://github.com/finanalyst/Cro-WebApp-Template-Repository-Hash/actions/workflows/test.yaml/badge.svg)
+# Cro::WebApp::Template::Repository::Hash
+>Using Cro templates in a Hash
 
-# Cro::WebApp::Template::Repository::Build
 
-----
-----
 ## Table of Contents
 [Introduction](#introduction)  
 [Usage](#usage)  
@@ -12,16 +11,17 @@
 [sub templates-from-hash( %hash-of-templates )](#sub-templates-from-hash-hash-of-templates-)  
 [sub render-template( $template, $topic, :%parts, :build($)! )](#sub-render-template-template-topic-parts-build-)  
 [sub modify-template-hash( %templates )](#sub-modify-template-hash-templates-)  
+[sub wait-for-hash-template-completion](#sub-wait-for-hash-template-completion)  
 
 ----
 # Introduction
-This module uses the Cro template language [Cro::WebApp::Template](https://cro.services/docs/reference/cro-webapp-template) (called **CWT** below) but in another context. **CWT** is aimed at templates that exist as files in some directory / folder, whether on a server or in an online resource.
+This module uses the Cro template language [Cro::WebApp::Template](https://cro.services/docs/reference/cro-webapp-template) (called **CWT** below) where the templates are in a Hash.
 
-Each template is contained in a single file. A collection of templates exists under a root directory. The directory may be on-line or local. This paradigm implies the request-response of a server hosted website, with the template used being dependent on the request.
+**CWT** is aimed at templates that exist as files in some directory / folder, whether on a server or in an online resource. Consequently, each template is contained in a single file. A collection of templates exists under a root directory. The directory may be on-line or local. This paradigm implies the request-response of a server hosted website, with the template used being dependent on the request.
 
-A Build context is defined here to mean that the structural HTML of a website is static and known before any user interaction, and is designed to be distributed via a CDN. Consequently, all the templates needed for the structure are known before any incoming request. User interaction with the website is confined to `micro-service` interfaces, each of which have their own server request/responses.
+In a Build context that is designed to be distributed via a CDN the structural HTML of a website is static. Consequently, all the templates needed for the structure are known before any incoming request. User interaction with the website is confined to `micro-service` interfaces, each of which have their own server request/responses.
 
-The structral templates can therefore be collected before creating the HTML and are available as in memory as strings of the template language.
+The structural templates can therefore be collected before creating the HTML and can be placed in a Hash. This also allows for templates to use other templates in the Hash via the `<:use> ` tag.
 
 # Usage
 ```
@@ -65,6 +65,9 @@ This sub can only be used after `templates-from-hash`, which creates a Build rep
 
 The values in %templates over-ride the value in the repository if it was set by `templates-from-hash` or adds to the repository if the key did not previously exist.
 
+## sub wait-for-hash-template-completion
+waits for all the compilation promises to stop returning Planned on a status call.
+
 
 
 
@@ -72,4 +75,4 @@ The values in %templates over-ride the value in the repository if it was set by 
 
 
 ----
-Rendered from README at 2022-02-20T14:36:05Z
+Rendered from README at 2022-04-01T15:35:56Z

@@ -1,6 +1,6 @@
 use Test;
-use Cro::WebApp::Template::Repository::Build;
-plan 4;
+use Cro::WebApp::Template::Repository::Hash;
+plan 5;
 
 my %temps = (
     'format-b' => '<strong><.contents></strong>',
@@ -14,20 +14,21 @@ my %temps = (
             HEADING
     );
 templates-from-hash %temps;
-like render-template('format-b', %(:contents('make it strong')), :build ),
+lives-ok { wait-for-hash-template-completion }, 'wait lives';
+like render-template('format-b', %(:contents('make it strong')), :hash ),
         / '<strong>' \s* 'make it strong' \s* '</strong>' /,
         'simple interpolation';
 my $parameters = %( :1level, :target<https://docs.raku.org>, :target<This-is-a-title>,
                     :text("This is a title") );
-like render-template('heading', $parameters, :build ),
+like render-template('heading', $parameters, :hash ),
         / '<h1' \s+ 'id="This-is-a-title"' \s* '>' \s* 'This is a title' .* '</h1>' /,
         'interpolation with an embedded sub';
 
 modify-template-hash( %(:format-b('<b><.contents></b>'),:format-i('<i><.contents></i>'),) );
 
-like render-template('format-b',%(:contents('make it bold'),), :build),
+like render-template('format-b',%(:contents('make it bold'),), :hash),
         / '<b>make it bold</b>' /, 'template replaced';
-like render-template('format-i',%(:contents('make it italic'),), :build),
+like render-template('format-i',%(:contents('make it italic'),), :hash),
         / '<i>make it italic</i>' /, 'template added';
 
 done-testing;

@@ -1,7 +1,7 @@
 {
-  "name": "Cro::WebApp::Template::Repository::Build",
-  "description": "Uses Cro templates in a Build context",
-  "version": "v0.0.1",
+  "name": "Cro::WebApp::Template::Repository::Hash",
+  "description": "Uses Cro templates stored in a Hash",
+  "version": "v0.0.2",
   "perl": "6.*",
   "authors": [
     "Richard Nabil Hainsworth"
@@ -13,9 +13,9 @@
   "build-depends": [],
   "test-depends": [],
   "provides": {
-    "Cro::WebApp::Template::Repository::Build": "lib/Cro/WebApp/Template/Repository/Build.rakumod"
+    "Cro::WebApp::Template::Repository::Hash": "lib/Cro/WebApp/Template/Repository/Hash.rakumod"
   },
   "resources": [],
   "license": "Artistic-2.0",
-  "source-url": "git://github.com/finanalyst/Cro-WebApp-Template-Repository-Build.git"
+  "source-url": "git://github.com/finanalyst/Cro-WebApp-Template-Repository-Hash.git"
 }

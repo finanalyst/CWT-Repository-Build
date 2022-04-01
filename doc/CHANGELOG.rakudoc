@@ -1,0 +1,8 @@
+=begin pod
+=TITLE Change log for CWT-Repository-Hash
+
+=head1 v0.0.2 2022-04-01
+=item change name from *::Build to *::Hash
+=item added sub wait-for-hash-template-completion
+
+=end pod
