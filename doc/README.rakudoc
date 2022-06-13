@@ -31,7 +31,7 @@ in the Hash via the C< <:use> > tag.
 
 =begin code
     use v6.d;
-    use Cro::WebApp::Template::Repository::Build;
+    use Cro::WebApp::Template::Repository::Hash;
     # gather template strings
     my %temps = %(
        'format-b' => '<strong><.contents></strong>',

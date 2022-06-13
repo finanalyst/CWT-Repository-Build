@@ -1,7 +1,7 @@
 {
-  "name": "Cro::WebApp::Template::Repository::Hash",
+  "name": "CWT-Repository-Hash",
   "description": "Uses Cro templates stored in a Hash",
-  "version": "v0.0.2",
+  "version": "v0.0.3",
   "perl": "6.d",
   "authors": [
     "Richard Nabil Hainsworth"
@@ -17,5 +17,5 @@
   },
   "resources": [],
   "license": "Artistic-2.0",
-  "source-url": "git://github.com/finanalyst/Cro-WebApp-Template-Repository-Hash.git"
+  "source-url": "git://github.com/finanalyst/CWT-Repository-Hash.git"
 }

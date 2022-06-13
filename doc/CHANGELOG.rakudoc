@@ -5,4 +5,7 @@
 =item change name from *::Build to *::Hash
 =item added sub wait-for-hash-template-completion
 
+=head1 v0.0.3 2022-06-13
+=item change META6.json for renaming
+
 =end pod

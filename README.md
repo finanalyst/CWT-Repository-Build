@@ -1,4 +1,4 @@
-![github-tests-passing-badge](https://github.com/finanalyst/Cro-WebApp-Template-Repository-Hash/actions/workflows/test.yaml/badge.svg)
+![github-tests-passing-badge](https://github.com/finanalyst/CWT-Repository-Hash/actions/workflows/test.yaml/badge.svg)
 # Cro::WebApp::Template::Repository::Hash
 >Using Cro templates in a Hash
 
@@ -26,7 +26,7 @@ The structural templates can therefore be collected before creating the HTML and
 # Usage
 ```
     use v6.d;
-    use Cro::WebApp::Template::Repository::Build;
+    use Cro::WebApp::Template::Repository::Hash;
     # gather template strings
     my %temps = %(
        'format-b' => '<strong><.contents></strong>',
@@ -75,4 +75,4 @@ waits for all the compilation promises to stop returning Planned on a status cal
 
 
 ----
-Rendered from README at 2022-06-13T17:50:20Z
+Rendered from README at 2022-06-13T18:26:21Z
