@@ -2,11 +2,11 @@
   "name": "Cro::WebApp::Template::Repository::Hash",
   "description": "Uses Cro templates stored in a Hash",
   "version": "v0.0.2",
-  "perl": "6.*",
+  "perl": "6.d",
   "authors": [
     "Richard Nabil Hainsworth"
   ],
-  "auth": "finanalyst",
+  "auth": "zef:finanalyst",
   "depends": [
     "Cro::WebApp"
   ],
