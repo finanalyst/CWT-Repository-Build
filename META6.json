@@ -1,7 +1,7 @@
 {
   "name": "CWT-Repository-Hash",
   "description": "Uses Cro templates stored in a Hash",
-  "version": "v0.0.3",
+  "version": "0.0.3",
   "perl": "6.d",
   "authors": [
     "Richard Nabil Hainsworth"
