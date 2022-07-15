@@ -52,7 +52,7 @@ in the Hash via the C< <:use> > tag.
     # later
     my $parameters = %( :1level, :target<https://docs.raku.org>, :top<__TOP>,
         :text("This is a title") );
-    say render-template('heading', $parameters, :build);
+    say render-template('heading', $parameters, :hash);
 =end code
 
 =head1 Dependencies

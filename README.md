@@ -47,7 +47,7 @@ The structural templates can therefore be collected before creating the HTML and
     # later
     my $parameters = %( :1level, :target<https://docs.raku.org>, :top<__TOP>,
         :text("This is a title") );
-    say render-template('heading', $parameters, :build);
+    say render-template('heading', $parameters, :hash);
 
 ```
 # Dependencies
@@ -75,4 +75,4 @@ waits for all the compilation promises to stop returning Planned on a status cal
 
 
 ----
-Rendered from README at 2022-06-13T18:26:21Z
+Rendered from README at 2022-07-15T22:10:55Z

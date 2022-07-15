@@ -1,14 +1,14 @@
 {
   "name": "CWT-Repository-Hash",
   "description": "Uses Cro templates stored in a Hash",
-  "version": "v0.0.3",
+  "version": "v0.0.5",
   "perl": "6.d",
   "authors": [
     "Richard Nabil Hainsworth"
   ],
   "auth": "zef:finanalyst",
   "depends": [
-    "Cro::WebApp"
+    "Cro::WebApp:ver<v0.8.7>"
   ],
   "build-depends": [],
   "test-depends": [],
