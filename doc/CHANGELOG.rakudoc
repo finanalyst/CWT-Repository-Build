@@ -16,4 +16,8 @@
 =item make sure v0.8.7 is used
 =item typo in readme
 
+=head1 0.0.6 2022-07-19
+=item t to rakutest
+=item typo in META6.json
+
 =end pod
