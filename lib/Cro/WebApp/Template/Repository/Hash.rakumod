@@ -3,7 +3,7 @@ use Cro::WebApp::Template;
 use Cro::WebApp::Template::Repository;
 use OO::Monitors;
 
-#| renders a template from a repository built from a hash
+#| renders a template from a repository built from a hash of templates
 multi render-template(Str $template, $initial-topic, :%parts,
                       :hash($)! --> Str) is export {
     my $repo=get-template-repository;
